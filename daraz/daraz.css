@@ -7,7 +7,9 @@ header{
     width: 100%;
     height: 130px;
     background-color: #f85606 ;
-    /* position: absolute; */
+    position: fixed;
+    top: 0%;
+    left: 0;
 }
 .pera{
     display: flex;
@@ -20,10 +22,10 @@ header{
     margin-left: 50%;
 }
 
-div:hover
+/* div:hover
 {
     color: #F7F7F7;
-}
+} */
 /* .daraz-img{
     margin-top: 20px;
     display: flex; */
@@ -48,15 +50,53 @@ div:hover
     padding-left: 10px;
     border: 1px solid #f85606;
 }
-main{
+/* section{
     width: 100%;
     border: 1px solid black;
     background-color: #f5f5f5;
-    position: relative;
+} */
+main{
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    margin-top: 130px;
+    /* position: relative; */
 }
-.large-img > img {
-    width: 70%;
+.upperSec{
+    width: 93%;
     margin-left: 3%;
+    display: flex;
+    gap: 1%;
+
+}
+.largeImg >img {
+    width: 988px;
+    height: 344px;
+    /* margin-left: 3%; */
+
+}
+.smallOne{
+    border: 1px solid black;
+     display: flex;
+     width: 194px;
+     height: 344px;
+     /* background-color: #ffe6dc; */
+     
+}
+/* .smallOne > img{
+    width: 25px;
+    height: 42px;
+    margin-left: 4%;
+    margin-top: 2%;
+    display: flex;
+} */
+.smallOne > b {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #6c1d00;
+    margin-top: 7%;
+    margin-left: 6%;
 
 }
 /* .large-img > section {
@@ -81,7 +121,7 @@ main{
     display: flex;
     margin-left: 3%;
     background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     align-items: center;
 }
 .flashSale > p {
@@ -106,8 +146,11 @@ main{
 }
 .saleImg{
     width:93%;
-    border: 1px solid #f5f5f5;
-    display: flex;
+    border: 2px solid #f5f5f5;
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    grid-template-rows: repeat(1 , 350px) ;
+    gap: 9px;
     margin-left: 3%;
     gap: 1%;
     background-color: #FFFFFF;
@@ -115,6 +158,8 @@ main{
     
 }
 .image{
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
     margin-top: 20px;
 }
 .image > img {
@@ -143,13 +188,276 @@ main{
     line-height: 12px;
     color: #9e9e9e;
 }
-.catagories{
+.categories{
+    width: 93%;
+    border: 1px solid #f5f5f5;
+    margin-left: 3%;
     display: grid;
-    /* border: 1px solid black; */
     grid-template-columns: repeat(8 , 1fr);
-    grid-template-rows: repeat(2 , 200px);
-    gap: 5px;
-}
-.catagories > catagory {
+    grid-template-rows: repeat(2 , 150px);
     
+}
+.def{
+    /* width: 100%; */
+    border: 1px solid #f5f5f5;
+    background-color: #FFFFFF;
+    display: grid;
+    align-items: center;
+    justify-content:center ;
+    
+}
+/* div:hover{
+    border: 4px solid #FFFFFF;
+    box-shadow: gray;
+} */
+.def > img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: auto;
+}
+.def > div{
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212121;
+    text-align: center;
+}
+.just{
+ width: 93%;
+ margin-left: 3%;
+ border: 1px solid #f5f5f5;
+display: grid;
+grid-template-columns: repeat(6 , 1fr);
+grid-template-rows: repeat(3 , 280px);
+gap: 9px;
+}
+.you{
+    border: 1px solid white;
+    background-color: #FFFFFF;
+}
+.you > p {
+    font-family: Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    color: #424242;
+    font-size: 12px;
+    line-height: 18px;   
+}
+.you > p >span {
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 18px;
+    color: #f57224;
+    line-height: 22px;
+}
+.more > button{
+    height: 40px;
+    width: 387px;
+    text-align: justify;
+    color: #1a9cb8;
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    border: 1px solid #1a9cb8    ;
+    margin-left: 35%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #f5f5f5;
+}
+/* .thirdLast{
+    width: 93%;
+    border: 1px solid black;
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(1 , 300px);
+} */
+.efg{
+    width: 93%;
+    border: 1px solid #f5f5f5;
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr)
+}
+.four > ul{
+    list-style-type: none;
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 35px;
+    color: #0f136d;
+}
+.four > ul > li {
+    font-size: 12px;
+    line-height: 17px;
+}
+.aaa{
+    display: flex;
+}
+.aaa > img{
+     width: 42px;
+     height: 42px;
+}
+.app > p {
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    color: #f57224;
+    line-height: 18px;
+}
+.app > p > span{
+    color: #0f136d;
+    font-size: 14px;
+    line-height: 16px;
+ } 
+ .ccc{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 10px;
+ }
+.endLast{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    width: 100%;
+    height: 150px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+ }
+/* .paymentSec{
+    width: 93%;
+    height: 150px;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+    margin-left: 3%;
+    
+} */
+.paymentSec > p {
+    font-size: 16px;
+    line-height: 35px;
+    font-family: Family
+    NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #183544;
+    margin-left: 9%;
+ }
+ .secLast{
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(6 , 13%);
+    grid-template-rows: repeat(2 , 40px);
+    margin-left: 9%;
+
+ }
+ .payment{
+    /* argin-left: 3%; */
+ }
+ .payment > img{
+    display: inline;
+    width: 36.75px;
+    height: 28px;
+ }
+.verified > p{
+    font-size: 16px;
+    line-height: 35px;
+    font-family: Family
+    NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #183544;
+    /* margin-left: 3%; */
+}
+.by > img {
+    width: 73px;
+    height: 41px;
+}
+.aboveLast{
+    width: 93%;
+    border: 1px solid #f5f5f5;
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 50px;
+    margin-right: 90px;
+}
+.para > p {
+   font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+   font-size: 16px;
+   line-height: 20px;
+   color: #888   ;
+}
+.para > p > span{
+    font-size: 12px;
+    line-height: 14px;
+}
+.para2 > p{
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #888
+}
+.para2 > p > span{
+    font-size: 11px;
+    line-height: 14px;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.inter{
+    border: 1px solid #FFFFFF;
+}
+.inter > p {
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 6%;
+    margin-top: 50px;
+    /* text-align: center; */
+    color: #2a2a2a;
+}
+.xyz{
+    display: flex;
+    margin-left: 6%;
+    gap: 12px;
+}
+.national{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    /* gap: 12px; */
+}
+.national > img {
+    width: 28px;
+    height: 28px;
+}
+.national > p {
+    font-family: Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif ;
+    font-size: 14px;
+    line-height: 16px;
+    color: #888;
+}
+.follow{
+    display: flex;
+    margin-left: 6%;
+    gap: 12px;
+}
+.us > img {
+    width: 28px;
+    height: 28px;
+}
+button{
+    width: 160px;
+    height: 40px;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0%;
+    left: 85%;
+    color: #044254;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    box-shadow: 0 0 6px #044254;
+}
+.smallBar{
+   width: 30px;
+   height: 199px;
+   border: 1px solid;
+  
 }
